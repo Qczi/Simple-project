@@ -1,0 +1,775 @@
+/* font-family: 'Saira Condensed',
+sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira Condensed',
+        sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-color: #29a6dc;
+    overflow: hidden;
+}
+
+header>* {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+}
+
+header img {
+    height: 50%;
+    bottom: 0;
+    right: -5%;
+}
+
+header div {
+    top: 6%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    z-index: 1;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header button {
+    margin-top: 20px;
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    header button {
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 393px) {
+    header img {
+        right: -25%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    header p {
+        font-size: 40px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header h2 {
+        font-size: 26px;
+    }
+
+    header button {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+
+    header img {
+        right: -15%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    header p {
+        font-size: 60px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 32px;
+    }
+
+    header button {
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    header img {
+        right: 0%;
+    }
+}
+
+@media (orientation: landscape) {
+    header img {
+        height: 80%;
+        bottom: 0;
+        right: -5%;
+    }
+
+    header div {
+        top: 15%;
+        left: 5%;
+        right: 50%;
+        text-align: center;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header p {
+        font-size: 70px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header h2 {
+        font-size: 40px;
+    }
+
+    header button {
+        margin-top: 40px;
+        padding: 20px 40px;
+        font-size: 30px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    header img {
+        height: 95%;
+        bottom: 0;
+        right: -22%;
+    }
+
+    header div {
+        top: 25%;
+    }
+
+    header button:hover {
+        background-color: white;
+        color: #111;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    header div {
+        text-align: left;
+    }
+
+    header button {
+        margin-top: 50px;
+        padding: 15px 60px;
+    }
+
+    header img {
+        right: -10%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    header img {
+        right: 0;
+        min-height: 800px;
+    }
+}
+
+/*SEKCJA 1 MOJE CECHY*/
+
+.features {
+    padding: 0 10%;
+    max-width: 1600px;
+    margin: 50px auto 30px;
+    text-align: center;
+}
+
+.features div {
+    margin-top: 20px;
+}
+
+.features h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.features img {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 375px;
+}
+
+.features h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.features p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media (min-width:360px) {
+    .features h1 {
+        font-size: 28px;
+    }
+
+    .features h2 {
+        font-size: 24px;
+    }
+
+    .features p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px) {
+    .features h1 {
+        font-size: 36px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .features p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1024px) {
+    .features {
+        padding: 0 2%;
+    }
+
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 30px;
+    }
+
+    .features h1 {
+        font-size: 38px;
+    }
+
+    .features h2 {
+        font-size: 18px;
+    }
+
+    .features p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:1600px) {
+
+    .features h1 {
+        font-size: 60px;
+    }
+
+    .features h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .features p {
+        font-size: 22px;
+        text-align: center;
+    }
+}
+
+/*SEKCJA 2 PORTFOLIO*/
+
+.portfolio {
+    background-color: black;
+    padding: 10px 0 30px;
+}
+
+.portfolio h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.portfolio .web img {
+    width: 100%;
+}
+
+.portfolio .about {
+    color: white;
+    padding: 0 20px 10px 0;
+    text-align: left;
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    padding-bottom: 6px;
+    text-indent: 20px;
+}
+
+.portfolio .about p {
+    font-size: 12px;
+    padding: 10px 0 0 20px;
+}
+
+.portfolio .project {
+    max-width: 1400px;
+    margin: 0 auto 20px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: #ff4f2c;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: #29a6dc;
+}
+
+@media (orientation:portrait) and (min-width: 768px) {
+    .portfolio h1 {
+        font-size: 38px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 28px;
+    }
+
+    .portfolio .about p {
+        font-size: 20px;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+    }
+}
+
+@media (orientation:landscape) {
+
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .portfolio .about {
+        padding: 0 20px 5px 0;
+    }
+
+    .portfolio .project:nth-of-type(even) .web {
+        float: right;
+    }
+
+    .portfolio .project:nth-of-type(even) .about {
+        padding-right: 0;
+    }
+
+    .portfolio .project:nth-of-type(even) .about p {
+        padding-right: 20px;
+    }
+
+    .portfolio .project:nth-of-type(even) .about h2 {
+        text-indent: 0;
+        margin-left: 20px;
+    }
+
+    .portfolio .about p {
+        font-size: 11px;
+    }
+
+    .portfolio .about h2 {
+        padding-top: 5px;
+    }
+}
+
+@media (orientation:landscape) and (min-width: 1024px) {
+    .portfolio h1 {
+        font-size: 38px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 28px;
+    }
+
+    .portfolio .about p {
+        font-size: 20px;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+    }
+}
+
+@media (orientation:landscape) and (min-width: 1400px) {
+    .portfolio h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+
+    .portfolio .about h2 {
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .portfolio .about p {
+        font-size: 22px;
+    }
+
+    .portfolio .project {
+        margin-bottom: 40px;
+    }
+}
+
+/* SEKCJA 3 MOTTO */
+
+.slogan {
+    text-align: center;
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.slogan h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+}
+
+.slogan p.text {
+    font-size: 18px;
+}
+
+.slogan p.author {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.slogan .bg {
+    padding: 30px 10px;
+    background-color: rgba(0, 63, 114, 0.5);
+}
+
+@media (orientation: landscape) {
+    .slogan p {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:768px) {
+    .slogan .bg {
+        padding: 40px 0;
+    }
+
+    .slogan h1 {
+        font-size: 38px;
+        padding: 10px 20px;
+        margin-bottom: 35px;
+    }
+
+    .slogan p.text {
+        font-size: 26px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1024px) {
+    .slogan .bg {
+        padding: 80px 0;
+    }
+
+    .slogan h1 {
+        font-size: 60px;
+        margin-bottom: 105px;
+    }
+
+    .slogan p.text {
+        font-size: 40px;
+        width: 40%;
+    }
+
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 28px;
+    }
+}
+
+/*SEKCJA HOBBY*/
+
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hobby .item {
+    height: 50vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(../images/hobby1.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(../images/hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(../images/hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(../images/hobby4.jpg);
+}
+
+.hobby h1 {
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hobby .item p {
+    color: white;
+    text-align: center;
+    line-height: 50vh;
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 24px;
+}
+
+@media (min-width:533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+
+    .hobby .item p {
+        line-height: 40vh;
+    }
+}
+
+@media (min-width:768px) {
+    .hobby h1 {
+        font-size: 48px;
+        margin: 40px 0;
+    }
+
+    .hobby .item p {
+        line-height: 40vh;
+        font-size: 30px;
+    }
+}
+
+@media (min-width:1024px) {
+    .hobby .item p {
+        opacity: 0;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 0.5s;
+    }
+
+    .hobby .item:hover {
+        background-size: 120%;
+    }
+}
+
+
+/*SEKCJA KONTAKT*/
+
+.contact {
+    background-color: black;
+    padding: 30px 20px;
+}
+
+.contact h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+}
+
+.contact .wrap {
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    line-height: 40px;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact .socials {
+    padding-top: 30px;
+    font-size: 0;
+}
+
+.contact .social {
+    padding: 10px;
+    color: white;
+}
+
+.contact .social img {
+    float: left;
+}
+
+.contact .social span {
+    line-height: 72px;
+    padding-left: 20px;
+    float: left;
+    font-size: 20px;
+}
+
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .contact h1 {
+        font-size: 48px;
+        padding: 30px 0;
+    }
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 15px;
+    }
+
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact input,
+    .contact textarea,
+    .contact button {
+        margin-bottom: 35px;
+    }
+
+    .contact input {
+        height: 46px;
+        font-size: 24px;
+    }
+
+    .contact textarea {
+        height: 180px;
+        font-size: 24px;
+    }
+
+    .contact button {
+        line-height: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .contact button:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #29a6dc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
